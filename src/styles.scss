@@ -1,1 +1,24 @@
+@import "./variables.scss";
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+body {
+    font-family: 'Nunito';
+    letter-spacing: 0.0625em;
+    background-color: darkcyan;
+  }
+  
+  a {
+    color: #64a19d;
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: darken(#64a19d, 20%);
+    }
+  }
+  
+  footer {
+    padding: 5rem 0;
+  }
+  
