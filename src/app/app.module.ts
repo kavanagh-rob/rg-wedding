@@ -7,7 +7,6 @@ import { TopNavComponent } from './wedding-site/top-nav/top-nav.component';
 import { ImageUploadComponent } from './wedding-site/image-upload/image-upload.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ImageGalleryComponent } from './wedding-site/image-gallery/image-gallery.component';
-import { APP_BASE_HREF, Location } from '@angular/common';
 
 const appRoutes: Routes = [
   {
@@ -24,7 +23,6 @@ const appRoutes: Routes = [
   }
 ];
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,9 +37,8 @@ const appRoutes: Routes = [
       { enableTracing: false }, // <-- debugging purposes only
     ),
     BrowserModule,
-    HttpClientModule,
+    HttpClientModule
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/interactive'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,18 +1,13 @@
-<table>
-    <thead>
-        <th>Image Name</th>
-        <th>Image Size</th>
-    </thead>
-    <tbody>
-        <tr *ngFor="let image of images">
-            <td>{{image.Key}}</td>
-            <td>{{image.Size}}</td>
-        </tr>
-    </tbody>
-</table>
-
-<section>
-    <tr *ngFor="let image of images">
-        <img [src]="getImageUrl(image.Key)" width="200px" height="200px">
-    </tr>
-</section>
+<div class="photo-gallery-container">
+    <div class="row">
+        <div class="col-3 col-md-3"></div>
+        <div class="col-6 col-md-6">
+            <h2 class="text-white mb-4">Image Gallery</h2>
+        </div>
+    </div>
+    <section>
+        <span *ngFor="let image of images">
+            <img [src]="getImageUrl(image.Key)" width="200px" height="200px">
+        </span>
+    </section>
+</div>

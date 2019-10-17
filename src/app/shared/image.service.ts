@@ -45,9 +45,7 @@ export class ImageService {
         if (err ) {
           observer.error('error reading images');
         }
-        console.log(data);
         data.Contents.forEach(  (content) => {
-          console.log(content.Key);
         });
         observer.next(data.Contents);
       });
